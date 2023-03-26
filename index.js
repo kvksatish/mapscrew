@@ -14,7 +14,7 @@ require("dotenv").config()
 app.use(express.json())
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/lll", (req, res) => {
     res.send("welcome")
 })
 
