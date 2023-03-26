@@ -1,6 +1,6 @@
  const express = require("express")
  var jwt = require('jsonwebtoken');
- const bcrypt = require('bcrypt');
+ //const bcrypt = require('bcrypt');
  const { connection } = require("./Config/db.js")
  //const { UserModel } = require("./Models/User")
 // const passwordValidator = require('password-validator');
