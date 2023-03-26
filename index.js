@@ -61,27 +61,27 @@ app.get("/", (req, res) => {
 //     }
 // });
 
-app.post("/login", async (req, res) => {
-    let { email, password } = req.body
-    let user = await UserModel.findOne({ email })
+// app.post("/login", async (req, res) => {
+//     let { email, password } = req.body
+//     let user = await UserModel.findOne({ email })
 
-    console.log(user)
-    let hash = user.password
-    bcrypt.compare(password, hash, function (err, result) {
+//     console.log(user)
+//     let hash = user.password
+//     bcrypt.compare(password, hash, function (err, result) {
 
-        if (result) {
-            var token = jwt.sign({ email: email }, 'secret');
-            console.log(token)
-            res.send({ "msg": "Login success", "token": token })
+//         if (result) {
+//             var token = jwt.sign({ email: email }, 'secret');
+//             console.log(token)
+//             res.send({ "msg": "Login success", "token": token })
 
-        }
+//         }
 
-        else {
-            res.send("Login Failed")
-        }
+//         else {
+//             res.send("Login Failed")
+//         }
 
-    })
-})
+//     })
+// })
 
 // app.get("/dashboard", (req, res) => {
 //     const token = req.headers.authorization.split(" ")[1]
