@@ -1,12 +1,12 @@
-const express = require("express")
-var jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
-const { connection } = require("./Config/db.js")
-const { UserModel } = require("./Models/User")
-const passwordValidator = require('password-validator');
-const validator = require('validator');
-const cors = require('cors');
-const { CourseModel } = require("./Models/Course.js");
+ const express = require("express")
+// var jwt = require('jsonwebtoken');
+// const bcrypt = require('bcrypt');
+// const { connection } = require("./Config/db.js")
+// const { UserModel } = require("./Models/User")
+// const passwordValidator = require('password-validator');
+// const validator = require('validator');
+ const cors = require('cors');
+// const { CourseModel } = require("./Models/Course.js");
 
 const app = express()
 
@@ -131,15 +131,15 @@ app.get("/", (req, res) => {
 
 
 app.listen(7500, async () => {
-    try {
-        await connection
-        console.log("connected")
-    }
-    catch (err) {
-        console.log("not connected")
-        console.log(err)
-    }
+    // try {
+    //     await connection
+    //     console.log("connected")
+    // }
+    // catch (err) {
+    //     console.log("not connected")
+    //     console.log(err)
+    // }
     console.log("linstening to port 7500")
-    console.log(process.env.NAME)
+   // console.log(process.env.NAME)
     //console.log(process.env.MONGO_URL)
 })
