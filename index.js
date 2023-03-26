@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     res.send("welcome")
 })
 
-app.get("/login", async (req, res) => {
+app.get("/login", (req, res) => {
 
     res.send("wrgnrggnrgngnnnnnyrn")
     // let { email, password } = req.body
