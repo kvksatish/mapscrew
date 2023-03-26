@@ -2,7 +2,7 @@
  var jwt = require('jsonwebtoken');
  const bcrypt = require('bcrypt');
  const { connection } = require("./Config/db.js")
- const { UserModel } = require("./Models/User")
+ //const { UserModel } = require("./Models/User")
 // const passwordValidator = require('password-validator');
 // const validator = require('validator');
  const cors = require('cors');
